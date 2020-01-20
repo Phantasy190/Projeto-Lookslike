@@ -1,0 +1,272 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/img1.jpg);
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    background-size: 100%;
+}
+
+
+/* ======= PRIMEIRO CONTEUDO ========== */
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 152px 0 25px 0;
+}
+
+
+#img_logo{
+    width: 100%;
+    height: 100%;
+}
+
+.conteudo-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.cima {
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+#cima-1 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.baixo {
+    text-align: center;
+}
+
+.baixo button{
+    width: 300px;
+    height: 52px;
+    background-color: transparent;
+    color: black;
+    text-decoration: none;
+    font-family: 'IM Fell Great Primer SC';
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 0.09em;
+    border: 1.5px solid black;
+    outline: none;
+}
+
+.baixo button:active {
+    background-color: black;
+    color: white;
+}
+
+/* ======== RESPONSIVIDADE ========== */
+
+@media screen and (min-width: 700px){
+    .conteudo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 0;
+    }
+    .conteudo-2 .cima{
+        padding-top: 25%;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .conteudo {
+        margin-top: 65px;
+    }
+    
+}
+
+
+/* ---------------- -------------- */
+/* ======= SEGUNDO CONTEUDO ========= */
+.conteudo-m-titulo {
+    text-align: center;
+    background-color: white;
+}
+
+.conteudo-m-titulo p {
+    font-size: 50px;
+    color: #130f40;
+    font-family: 'IM Fell Great Primer SC';
+}
+
+.conteudo-meio {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 0 30px 30px 25px;
+    border: 2px solid #f9ca24;
+    
+}
+
+.conteudo-m-central {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px;
+    margin: 0 30px;
+}
+
+
+.meio-item-1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.infobox-item-1 {
+    border: 2px solid #ffeaa7;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5px;
+}
+
+#meio_1{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+#meio_1:hover{
+    transform: scale(1.2);
+}
+
+.infobox-i1-titulo {
+    background-color: transparent;
+    color: gray;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+.infobox-heart {
+    text-align: center;
+}
+
+.infobox-heart .btn{
+    width: 90px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.infobox-heart .btn:active {
+    background-color: black;
+    color: #fab1a0;
+    border: 1px solid red;
+}
+
+.infobox-heart p {
+    font-family: 'Montserrat';
+    font-size: 10px;
+} 
+
+/* ====== RESPONSIVIDADE ======== */
+
+@media screen and (min-width: 700px){
+    .conteudo-meio {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .conteudo-m-central {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .conteudo-m-central div{
+        margin: 15px;
+    }
+    .conteudo-m-titulo {
+        border-top: 1px solid #f9ca24;
+        border-bottom: 1px solid #f9ca24;
+    }
+}
+
+@media screen and (min-width: 1050px){
+    .conteudo-m-central {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* ---------------------------------*/
+/* ======== CONTEUDO MAPA ======*/
+
+.conteudo-mapa {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.conteudo-mapa-titulo {
+    background-color: white;
+}
+
+.conteudo-mapa-titulo p{
+    font-size: 50px;
+    color: #130f40;
+    font-family: 'IM Fell Great Primer SC';
+}
+
+@media screen and (min-width: 700px){
+    .conteudo-mapa-titulo {
+        border-top: 1px solid #f9ca24;
+        border-bottom: 1px solid #f9ca24;
+    }
+}
+
+
+/* --------------------------------*/
+/* ========= CONTEUDO RODAPÉ ====*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9ca24;
+    font-family: 'IM Fell Great Primer SC';
+    font-weight: bold;
+    height: 250px;
+}
+
+.conteudo-footer-titulo {
+    text-align: center; 
+}
+
+.conteudo-footer-titulo h1 {
+    margin: 17px;
+}
+
+.conteudo-footer-titulo p{
+    margin-bottom: 0;
+}
+
+.conteudo-footer-info {
+    text-align: center;
+}
+
+#icons-rodape {
+    display: inline-block;
+    font-size: 25px;
+}
+
+#icons-rodape i{
+    margin: 5px;
+}
+
+
+
+
+
+
+
+
